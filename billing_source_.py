@@ -6,8 +6,8 @@ SGST = 10 / 100
 CGST = 10 / 100
 
 # Print the header
-print("------- We are selling HP Laptop --------")
-print("------- Each costs ₹", HP_LAPTOP_COST, "---------------")
+print("-------- We are selling HP Laptop --------\n")
+print("-------- Each costs ₹", HP_LAPTOP_COST, "---------------\n")
 
 # Get the number of items required
 required_items = int(input("No. of required items: "))
@@ -36,12 +36,12 @@ HP_discount_amount = HP_total_cost * discount
 total_cost = HP_total_cost + HP_SGST + HP_CGST - HP_discount_amount
 
 # Output
-print("------------ Billing Summary --------------------")
-print(" Total Laptop Cost : ₹", HP_total_cost)
-print(" SGST (10%) : ₹", HP_SGST)
-print(" CGST (10%) : ₹", HP_CGST)
-print(" Discount Applied (", discount * 100, "%) : ₹", HP_discount_amount)
-print("-------------------------------------------------")
-print(" Total Payable Amount : ₹", total_cost)
-print("-------------------------------------------------")
+print("\n------------- Billing Summary ---------------------")
+print(" \tTotal Laptop Cost		: ₹", HP_total_cost)
+print(" \tSGST (10%) 	    		: ₹", HP_SGST)
+print(" \tCGST (10%) 	    		: ₹", HP_CGST)
+print(" \tDiscount ({} %)		:{}" .format(int(discount * 100), HP_discount_amount))
+print("--------------------------------------------------")
+print(" \tTotal Payable Amount : ₹", total_cost)
+print("--------------------------------------------------")
 print(".<.<.< THANK YOU AND VISIT AGAIN >.>.>.")
